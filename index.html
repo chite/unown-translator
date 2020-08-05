@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unown translator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="head">
+      <h1 class="head__title title">未知圖騰翻譯器</h1>
+    </header>
+    <article class="article">
+      <section class="btn__group article__part">
+        <button class="btn btn--primary" id="toChinese">未知圖騰翻譯</button>
+        <button class="btn btn--primary" id="toUnown">英文翻譯</button>
+      </section>
+      <main id="chinese" class="main--c">
+        <section class="cards article__part" id="cards"></section>
+        <textarea class="output" id="output" cols="40" rows="5" placeholder="點擊上方圖騰以翻譯"></textarea>
+      </main>
+      <main id="unown" class="main--c">
+        <textarea class="output" id="input" cols="40" rows="5" placeholder="輸入英文字母以翻譯"></textarea>
+        <section class="cards article__part" id="outputCard"></section>
+        <div class="head__title">
+          <button class="btn btn--submit" id="onputSubmit">確認</button>
+        </div>
+      </main>
+    </article>
+    <script src="./main.js?ver=3"></script>
+  </body>
+</html>
